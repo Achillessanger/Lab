@@ -1,0 +1,199 @@
+
+.fontone{
+    font-family: sans-serif,Serif;
+}
+.fonttwo{
+    font-family: "Times New Roman";
+}
+body{
+
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    background-color: #E8EAF6;
+}
+/*.heavyblue{
+    margin-top: 0;
+    background-color: #1A237E;
+}*/
+h1{
+    margin: 0;
+    /*margin-left: 1em;
+    margin-top: 1em;*/
+    font-size: 1.5em;
+    color: white;
+
+}
+#letusknow{
+    margin: 0;
+    font-style: italic;
+    /*margin-left: 1em;
+    margin-top: 0;*/
+    color: white;
+
+}
+.layoutheader{
+    background-color: #1A237E;
+    background-position: top;
+    margin: 0;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: #3F51B5;
+    margin-bottom: 0.5em;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding-left: 0.7em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+li{
+    display: inline;
+}
+
+.navclass{
+    margin: 0;
+    padding: 0;
+    /* margin-left: 0.3em;*/
+    padding-top: 0.3em;
+    /* margin-bottom: 0.3em;
+     margin-right: 0.3em;*/
+    padding-left: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 0.3em;
+}
+
+
+.block{
+    margin-top: 0;
+    padding-top: 0.5em;
+    background-color: white;
+    overflow: hidden;
+}
+.h2class{
+    margin: 0;
+    color: white;
+    font-size: 1em;
+    background-color: #7986CB;
+    border-top: 0.5em;
+
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    background-size: auto;
+}
+figcaption{
+    background-color: #C5CAE9;
+    color: #7990A3;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+
+}
+
+.centralpark-dis{
+    margin: 0;
+    padding: 0;
+
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+.blue-bold{
+    color: #00B0FF;
+    font-weight: bold;
+}
+.shareicons{
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+}
+.blueborder{
+    overflow: hidden;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    border-style: solid;
+    border-color: #C5CAE9;
+}
+img{
+    vertical-align: bottom;
+}
+.h3class{
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    font-style: italic;
+    color: #C5CAE9;
+    font-size: smaller;
+}
+.h3class>time{
+    color: #F5A2C1;
+}
+article{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+hr{
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.oneem{
+    margin-bottom: 1em;
+}
+.finishbluevorder{
+    margin-bottom: 0.5em;
+}
+footer{
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+    background-color: #1A237E;
+}
+.HBS{
+    padding: 0;
+    margin: 0;
+    padding-top: 1.3em;
+    padding-left: 1em;
+    margin-bottom: 0.6em;
+    color: white;
+}
+.HBS a{
+    color: #00B0FF;
+}
+.copyright{
+    padding: 0;
+    margin: 0;
+    padding-left: 1em;
+    padding-bottom: 1.3em;
+    color: white;
+    font-style: italic;
+}
+.changecolor:hover{
+    margin: 0.3em;
+    background-color: #F50057;
+    color: white;
+}

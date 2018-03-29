@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="lab03.css">
 </head>
 <body>
 
 <header class="SYT">
+    <div class="layoutheader">
+        <h1 class="fontone">Share Your Travels</h1>
+        <p id ="letusknow" class="fonttwo">Let us know where you've been</p>
+    </div>
 
-    <h1><img src="images/logo.png">Share Your Travels</h1>
+    <nav>
+        <ul class="fontone">
+            <li class="li1"><a class="navclass changecolor left-1em" href="#">Description</a></li>
+            <li class="li2"><a class="navclass changecolor"href="#">Related Photos</a></li>
+            <li class="li3"><a class="navclass changecolor"href="#">Reviews</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#">Description</a></li>
-        <li><a href="#">Related Photos</a></li>
-        <li><a href="#">Reviews</a></li>
-    </ul>
-</nav>
 
-<h2>New York - Central Park</h2>
-<section>
-    <h3>Description</h3>
-    <p>Photo by Randy Connolly</p>
-    <p>This photo of Conservatory Pond in <a href="#">Central Park</a> in <a href="#">New York City</a> was taken on <time datetime="2016-10-22">October 22, 2016</time> with a Canon EOS 30D camera. </p>
-    <figure>
-        <img src="images/central-park.jpg">
-        <figcaption><i>Conservatory Pond in Central Park</i></figcaption>
-    </figure>
-    <p>Options:<img src="images/icon_download.png"><img src="images/icon_mail.png"><img src="images/icon_map.png"><img src="images/icon_up.png"><img src="images/icon_down.png"></p>
+
+
+<section class="block">
+    <div class="blueborder">
+        <h2 class="h2class fontone">NEW YORK - CENTRAL PARK</h2>
+        <figure>
+            <img src="images/large-central-park.jpg" width="100%">
+            <figcaption class="fonttwo"><i>Conservatory Pond in Central Park</i></figcaption>
+        </figure>
+
+
+        <p class="centralpark-dis fonttwo">This photo of Conservatory Pond in <a href="#" class="blue-bold">Central Park</a> in <a href="#"class="blue-bold">New York City</a> was taken on <time datetime="2016-10-22">October 22, 2016</time> with a Canon EOS 30D camera. </p>
+
+        <p class="shareicons"><img src="images/icon_download.png"><img src="images/icon_mail.png"><img src="images/icon_map.png"><img src="images/icon_up.png"><img src="images/icon_down.png"></p>
+    </div>
 </section>
 
-<section>
-    <h3>Related Photos</h3>
-    <img src="images/related-square1.jpg"> <img src="images/related-square2.jpg"> <img src="images/related-square3.jpg">
+<section class="block">
+    <div class="blueborder">
+        <h2 class="h2class fontone">RELATED PHOTOS</h2>
+        <img src="images/related-square1.jpg"> <img src="images/related-square2.jpg"> <img src="images/related-square3.jpg">
+    </div>
 </section>
 
-<section>
-    <h3>Reviews</h3>
-    <h4><img src="images/icon_comment.png">Ricardo on <time>2016-05-23</time></h4>
-    <article>Easy on the HDR buddy</article>
-    <hr>
-    <h4><img src="images/icon_comment.png">Susan on <time>2016-11-18</time></h4>
-    <article>I love Central Park</article>
-    <hr>
+<section class="block">
+    <div class="blueborder finishbluevorder">
+        <h2 class="h2class fontone">REVIEWS</h2>
+        <h3 class="h3class fonttwo">By Ricardo on <time>2016-05-23</time></h3>
+        <article class="fonttwo">Easy on the HDR buddy</article>
+        <hr>
+        <h3 class="h3class fonttwo">By Susan on <time>2016-11-18</time></h3>
+        <article class="fonttwo">I love Central Park</article>
+        <hr class="oneem">
+    </div>
 </section>
 
 <footer>
-    <p><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a> </p>
-    <p><i>Copyright &copy; 2017 Share Your Travels</i></p>
+    <p class="HBS fontone"><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a> </p>
+    <p class="copyright fontone"><i>Copyright &copy; 2017 Share Your Travels</i></p>
 </footer>
 
 </body>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+   <meta charset="utf-8">
+   <title>Lab 04</title>
+   <link rel="stylesheet" href="./css/reset.css" />
+   <link rel="stylesheet" href="./css/Lab04.css" />
+</head>
+<body>
+<header>
+     <h1>Share Your Travels</h1>
+     <p>let us know where you've been</p>
+</header>
+<main>
+   <section>
+   <form>
+       <legend>PHOTO DETAILS</legend>
+       <fieldset>
+           <table>
+               <tbody>
+               <tr>
+                   <td colspan="2">
+                       <p>Title<br></p>
+                       <!--<textarea>Give your photo descriptive name</textarea>-->
+                       <input type="text" value="Give your photo descriptive name" name="title" style="color:gray;"><br>
+                       <p>Description<br></p>
+                       <textarea>Adding a rich description will help with search results</textarea>
+                       <!--<input type="text" value="Adding a rich description will help with search results"name="title"">-->
+                       <!--<br>-->
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <p>Continent<br></p>
+                       <select name="city">
+                           <option value="1">Choose continent</option>
+                           <option value="2">下拉1</option>
+                           <option value="3">下拉2</option>
+                       </select>
+                       <br>
+                       <p>Country<br></p>
+                       <select name="city" >
+                           <option value="1">Choose country</option>
+                           <option value="2">下拉1</option>
+                           <option value="3">下拉2</option>
+                       </select>
+                       <br>
+                       <p>City<br></p>
+                       <input type="text" name="city">
+                   </td>
+                   <td>
+                       <div class="box">
+                           Copyright?<br>
+                           <input type="radio" name="copyright">All rights reserved
+                           <br>
+                           <input type="radio" name="copyright" checked>Creative Commons
+                       </div>
+                       <div class="box">
+                           Creative Commons Types<br>
+                           <input type="checkbox" name="Creativecommonstypes">Attribution<br>
+                           <input type="checkbox" name="Creativecommonstypes">Noncommercial<br>
+                           <input type="checkbox" name="Creativecommonstypes">No Derivative Works<br>
+                       </div>
+                   </td>
+               </tr>
+               <tr class="rectangle">
+                   <td colspan="2">
+                       I accept the software license<input type="checkbox" name="accept">
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <p>Rate this photo:<br></p>
+                       <input type="text"><br>
+                      <p> Color Collection:<br></p>
+                       <input type="color">
+                   </td>
+                   <td>
+                       <div class="box">
+                           <p>Date Taken:<br></p>
+                           <input type="date"><br>
+                           <p>Time Taken:<br></p>
+                           <input type="time">
+                       </div>
+                   </td>
+               </tr>
+               <tr>
+                   <td colspan="2" class="rectangle">
+                       <input type="submit" class="rounded">
+                       <input type="reset" class="rounded" value="Clear Form">
+                   </td>
+               </tr>
+               </tbody>
+           </table>
+       </fieldset>
+   </form>
+   </section>
+</main>  
+
+
+</body>
+</html>

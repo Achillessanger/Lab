@@ -3,14 +3,49 @@
 <head >
    <meta charset="utf-8">
    <title>Lab 04</title>
-   <link rel="stylesheet" href="./css/reset.css" />
-   <link rel="stylesheet" href="./css/Lab04.css" />
+   <!--<link rel="stylesheet" href="./css/reset.css" />-->
+   <!--<link rel="stylesheet" href="./css/Lab04.css" />-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <header>
-     <h1>Share Your Travels</h1>
-     <p>let us know where you've been</p>
+    <nav class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h1 class="text-center">Share Your Travels</h1>
+                <p class="text-center"><em>Let us know where you've been</em></p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 text-center"><a class="navbar-brand text-secondary" href="Lab02.html">Gallery</a></div>
+                    <div class="col-md-4 text-center"><a class="navbar-brand text-secondary"href="#">Feeling Lucky</a></div>
+                    <div class="col-md-4 text-center"><a class="navbar-brand text-secondary"href="#">User</a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <legend>Photo Details</legend>
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" placeholder="Give your photo descriptive name" name="title" class="form-control"><br>
+                <label>Description</label>
+                <textarea class="form-control" placeholder="Adding a rich description will help with search results"></textarea>
+                <label>Continent</label>
+                <select name="Choose continent" class="form-control">
+                    <option value="1">Choose continent</option>
+                    <option value="2">下拉1</option>
+                    <option value="3">下拉2</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <main>
    <section>
    <form>
@@ -95,8 +130,10 @@
        </fieldset>
    </form>
    </section>
-</main>  
+</main>
 
-
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -29,108 +29,112 @@
     <div class="card">
         <div class="card-body">
             <legend>Photo Details</legend>
-            <div class="form-group">
+            <form class="form-group">
+                <fieldset>
                 <label>Title</label>
                 <input type="text" placeholder="Give your photo descriptive name" name="title" class="form-control"><br>
                 <label>Description</label>
                 <textarea class="form-control" placeholder="Adding a rich description will help with search results"></textarea>
+                <br>
                 <label>Continent</label>
                 <select name="Choose continent" class="form-control">
                     <option value="1">Choose continent</option>
                     <option value="2">下拉1</option>
                     <option value="3">下拉2</option>
                 </select>
-            </div>
+                <br>
+                <label>Country</label>
+                <select name="Choose country" class="form-control">
+                    <option value="1">Choose country</option>
+                    <option value="2">下拉1</option>
+                    <option value="3">下拉2</option>
+                </select>
+                <br>
+                <label>City</label>
+                <input type="text" name="city" class="form-control">
+                <br>
+                <label>Copyright?</label>
+                <form>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">All rights reserved</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked>Creative Commons</label>
+                    </div>
+                </form>
+                <br>
+                <label>Creative Commons Types</label>
+                <form>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Attribution
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Noncommercial
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">No Derivative Works
+                        </label>
+                    </div>
+                </form>
+                <br>
+                <form>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">I accept the software license
+                        </label>
+                    </div>
+                </form>
+                <br>
+                <!--<div class="form-group">-->
+                    <!--<ul class="list-inline">-->
+                        <!--<li class="list-inline-item"><label>Rate this photo:</label>-->
+                            <!--<input type="number" class="form-control">-->
+                        <!--</li>-->
+                        <!--<li class="list-inline-item float-right"><label>Color Collection:</label>-->
+                            <!--<input type="text" class="form-control" size="85">-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                    <div class="row">
+                        <div class="col-md-3">
+                        <label>Rate this photo:</label>
+                        <input type="number" class="form-control"><br>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-8">
+                        <label> Color Collection:</label>
+                        <input type="text" class="form-control">
+                        </div>
+                    </div>
+                <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Date Taken:</label>
+                            <input type="number" class="form-control"><br>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <label>Time Taken:</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Clear</button>
+                </div>
+                </fieldset>
+            </form>
         </div>
 
     </div>
 </div>
 
-<main>
-   <section>
-   <form>
-       <legend>PHOTO DETAILS</legend>
-       <fieldset>
-           <table>
-               <tbody>
-               <tr>
-                   <td colspan="2">
-                       <p>Title<br></p>
-                       <!--<textarea>Give your photo descriptive name</textarea>-->
-                       <input type="text" value="Give your photo descriptive name" name="title" style="color:gray;"><br>
-                       <p>Description<br></p>
-                       <textarea>Adding a rich description will help with search results</textarea>
-                       <!--<input type="text" value="Adding a rich description will help with search results"name="title"">-->
-                       <!--<br>-->
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <p>Continent<br></p>
-                       <select name="city">
-                           <option value="1">Choose continent</option>
-                           <option value="2">下拉1</option>
-                           <option value="3">下拉2</option>
-                       </select>
-                       <br>
-                       <p>Country<br></p>
-                       <select name="city" >
-                           <option value="1">Choose country</option>
-                           <option value="2">下拉1</option>
-                           <option value="3">下拉2</option>
-                       </select>
-                       <br>
-                       <p>City<br></p>
-                       <input type="text" name="city">
-                   </td>
-                   <td>
-                       <div class="box">
-                           Copyright?<br>
-                           <input type="radio" name="copyright">All rights reserved
-                           <br>
-                           <input type="radio" name="copyright" checked>Creative Commons
-                       </div>
-                       <div class="box">
-                           Creative Commons Types<br>
-                           <input type="checkbox" name="Creativecommonstypes">Attribution<br>
-                           <input type="checkbox" name="Creativecommonstypes">Noncommercial<br>
-                           <input type="checkbox" name="Creativecommonstypes">No Derivative Works<br>
-                       </div>
-                   </td>
-               </tr>
-               <tr class="rectangle">
-                   <td colspan="2">
-                       I accept the software license<input type="checkbox" name="accept">
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <p>Rate this photo:<br></p>
-                       <input type="number" style="width: 7.5%"><br>
-                      <p> Color Collection:<br></p>
-                       <input type="color">
-                   </td>
-                   <td>
-                       <div class="box">
-                           <p>Date Taken:<br></p>
-                           <input type="date"><br>
-                           <p>Time Taken:<br></p>
-                           <input type="time">
-                       </div>
-                   </td>
-               </tr>
-               <tr>
-                   <td colspan="2" class="rectangle">
-                       <input type="submit" class="rounded">
-                       <input type="reset" class="rounded" value="Clear Form">
-                   </td>
-               </tr>
-               </tbody>
-           </table>
-       </fieldset>
-   </form>
-   </section>
-</main>
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

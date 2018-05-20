@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+}
+.center{
+    margin:0 auto;
+    text-align: center;
+
+}
+form{
+    margin:0;
+}
+select,button{
+    width: 300px;
+}
+th{
+    background-color: gray;
+    color: whitesmoke;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: lightgrey;
+}
+td{
+    padding:0 0.5em;
+}
+.hide{
+    display: none;
+}
+table{
+    text-align: center;
+}

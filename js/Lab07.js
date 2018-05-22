@@ -80,12 +80,15 @@ function createTable() {
         tablediv.appendChild(tableAr[tableAr.length-1].table);
         tableAr[tableAr.length-1].table.className = "center";
     }
+
+
 }
 
 sel2.onchange = function (ev) {
     tablediv.innerHTML = "";
     tablediv.appendChild(tableAr[sel2.selectedIndex-1].table);
     tableAr[sel2.selectedIndex-1].table.className = "center";
+    sel1.onchange();
 }
 
 

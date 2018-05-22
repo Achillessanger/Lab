@@ -17,7 +17,6 @@ sel1.onchange = function (ev) {
         tableCol.classList.add('hide');
         document.getElementById('btCom').style.display = 'none';
         div1.innerHTML = "";
-        tablediv.innerHTML = "";
     }
     if(sel1.value == 2){
         div1.innerHTML = "";

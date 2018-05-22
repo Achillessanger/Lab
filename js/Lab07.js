@@ -164,15 +164,20 @@ function deleteTable() {
         if(sel2.selectedIndex > 0) {
             tableAr.splice(deleteTableNo, 1);
             // delete tableAr[deleteTableNo];
+          if(sel2.options.length == 2){
+              sel2.options.remove(deleteTableNo + 1);
+              sel2.children[0].selected = true;
+              tablediv.innerHTML = "";
+          }else {
+              sel2.options.remove(deleteTableNo + 1);
+              sel2.children[1].selected = true;
 
-            sel2.options.remove(deleteTableNo + 1);
-            sel2.children[deleteTableNo].selected = true;
-
-            tablediv.innerHTML = "";
-            tablediv.appendChild(tableAr[sel2.selectedIndex - 1].table);
-            tableAr[sel2.selectedIndex - 1].table.className = "center";
+              tablediv.innerHTML = "";
+              tablediv.appendChild(tableAr[sel2.selectedIndex - 1].table);
+              tableAr[sel2.selectedIndex - 1].table.className = "center";
+          }
         }else if(sel2.selectedIndex == 0){
-
+            tablediv.innerHTML = "";
         }
 
 

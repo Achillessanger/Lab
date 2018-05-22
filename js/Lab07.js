@@ -18,6 +18,7 @@ sel1.onchange = function (ev) {
     if(sel1.value == 2){
         div1.innerHTML = "";
         if(ifShowBt == 1){
+            showCombt();
             document.getElementById('btCom').style.display = 'block';
             document.getElementById('btCom').className = 'center';
             tableCol.onchange();
@@ -47,6 +48,7 @@ function showCombt() {
     tableCol.classList.remove('hide');
 }
 function createTable() {
+    ifShowBt == 1;
     tableCol.onchange = function (ev) {
         div1.innerHTML = "";
         for (var i = 0; i < document.getElementById('tableCol').value; i++) {
@@ -85,6 +87,7 @@ sel2.onchange = function (ev) {
 
 
 function addRow() {
+    ifShowBt == 1;
     div1.innerHTML = "";
     tableName.classList.add('hide');
     tableCol.classList.add('hide');
@@ -112,6 +115,7 @@ function addRow() {
 }
 
 function delectRow() {
+    ifShowBt == 1;
     div1.innerHTML = "";
     tableName.classList.add('hide');
     tableCol.classList.add('hide');
@@ -145,6 +149,7 @@ function delectRow() {
 }
 
 function deleteTable() {
+    ifShowBt == 1;
     tableName.classList.add('hide');
     tableCol.classList.add('hide');
     document.getElementById('btCom').style.display = 'block';
@@ -153,15 +158,19 @@ function deleteTable() {
     
     btCom.onclick = function (ev) {
         var deleteTableNo = sel2.selectedIndex - 1;
-        tableAr.splice(deleteTableNo,1);
-        // delete tableAr[deleteTableNo];
+        if(sel2.selectedIndex > 0) {
+            tableAr.splice(deleteTableNo, 1);
+            // delete tableAr[deleteTableNo];
 
-        sel2.options.remove(deleteTableNo+1);
-        sel2.children[deleteTableNo].selected = true;
+            sel2.options.remove(deleteTableNo + 1);
+            sel2.children[deleteTableNo].selected = true;
 
-        tablediv.innerHTML = "";
-        tablediv.appendChild(tableAr[sel2.selectedIndex -1].table);
-        tableAr[sel2.selectedIndex -1].table.className = "center";
+            tablediv.innerHTML = "";
+            tablediv.appendChild(tableAr[sel2.selectedIndex - 1].table);
+            tableAr[sel2.selectedIndex - 1].table.className = "center";
+        }else if(sel2.selectedIndex == 0){
+
+        }
 
 
 

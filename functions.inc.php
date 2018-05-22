@@ -10,6 +10,7 @@ function generateLink($url, $label, $class) {
 
 function outputPostRow($number)  {
     include("travel-data.inc.php");
+    $postId = ${'postId'.$number};
     $userId =${'userId'.$number};
     $userName =${'userName'.$number};
     $date =${'date'.$number};
@@ -18,9 +19,8 @@ function outputPostRow($number)  {
     $excerpt =${'excerpt'.$number};
     $reviewsNum =${'reviewsNum'.$number};
     $reviewsRating = ${'reviewsRating'.$number};
-    $review = '';
-    $review .='<div class="row"><div class="col-md-4"><a href="post.php?id=1" class=""><img class="img-responsive" src ="images/'. $thumb .'"></a></div><div class="col-md-8"><h2>'. $title .'</h2><div class="details">Posted by <a class="">'.$userName.'</a><span class="pull-right">'.$date.'</span><P class="ratings">'.constructRating($reviewsRating).$reviewsNum.'REVIEWS</P></div><P class="excerpt">'.$excerpt.'</P><p><a class="btn btn-primary btn-sm ">Read more</a></p></div></div><hr>';
-    echo $review;
+    $together = "<div class=\"row\"><div class=\"col-md-4\"><a href=\"post.php?id=$postId\" class=\"\"><img src=\"images/$thumb\" alt=\"$title\" class=\"img-responsive\"/></a></div><div class=\"col-md-8\"> <h2>$title</h2><div class=\"details\">Posted by <a href=\"user.php?id=$userId\" class=\"\">$userName</a><span class=\"pull-right\">$date</span><p class=\"ratings\">".constructRating($reviewsRating)."$reviewsNum Reviews</p></div><p class=\"excerpt\">$excerpt</p><p><a href=\"post.php?id=$postId\" class=\"btn btn-primary btn-sm\">Read more</a></p></div></div><hr/>";
+    echo $together;
 }
 
 /*

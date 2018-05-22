@@ -13,7 +13,11 @@ const optionAr = [];
 
 sel1.onchange = function (ev) {
     if(sel1.value == 1){
-
+        tableName.classList.add('hide');
+        tableCol.classList.add('hide');
+        document.getElementById('btCom').style.display = 'none';
+        div1.innerHTML = "";
+        tablediv.innerHTML = "";
     }
     if(sel1.value == 2){
         div1.innerHTML = "";

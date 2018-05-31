@@ -42,11 +42,12 @@ include 'travel-data.inc.php';
               /* hint: use array and loop */
               //the next line is an example
               //<a href="list.php?country=Canada" role="button" class="btn btn-default"> Canada</a> 
-                foreach ($countries as $countryname){
+                foreach ($countries as $countrykey => $countryname){
                     echo "<a href=\"list.php?country=$countryname\" role=\"button\" class=\"btn btn-default\">$countryname</a> ";
                 }
 
               ?>
+
                      
         </div>               
            
